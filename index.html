@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministerio de Medio Ambiente y Recursos Naturales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.7/dist/
+  build/static/js/bundle.min.js"></script>
+  <style>
+    
+.JB {
+ position: fixed;
+bottom: 24px;
+right: 24px;
+z-index: 9999;
+
+      }
+  </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="logo">
+                        <img src="https://ambiente.gob.do/wp-content/uploads/2023/01/logo-ministerio.png" alt="Logo Ministerio de Medio Ambiente">
+                    </div>
+                    <div class="header-actions">
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="language-selector">
+                            <span>ES</span>
+                            <span>EN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li class="dropdown">
+                            <a href="#nosotros">NOSOTROS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                                <li><a href="#historia">Historia</a></li>
+                                <li><a href="#carta-compromiso">Carta Compromiso al Ciudadano</a></li>
+                                <li><a href="#despacho-ministro">Despacho del ministro</a></li>
+                                <li><a href="#perfiles-funcionarios">Perfiles de funcionarios</a></li>
+                                <li><a href="#dependencias">Dependencias</a></li>
+                                <li><a href="#direcciones-provinciales">Direcciones Provinciales</a></li>
+                                <li><a href="#marco-legal">Marco Legal</a></li>
+                                <li><a href="#organigrama">Organigrama</a></li>
+                                <li><a href="#pasaporte-verde">Pasaporte Verde</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#viceministerios">VICEMINISTERIOS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#areas-protegidas">Viceministerio Áreas Protegidas y Biodiversidad</a></li>
+                                <li><a href="#cambio-climatico">Viceministerio Cambio Climático y Sostenibilidad</a></li>
+                                <li><a href="#costeros-marinos">Viceministerio de Costeros y Marinos</a></li>
+                                <li><a href="#gestion-ambiental">Viceministerio Gestión Ambiental</a></li>
+                                <li><a href="#recursos-forestales">Viceministerio Recursos Forestales</a></li>
+                                <li><a href="#suelos-aguas">Viceministerio Suelos y Aguas</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#servicios">SERVICIOS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#autorizaciones-linea">Sistema de Autorizaciones Ambientales en Línea</a></li>
+                                <li><a href="#consulta-autorizaciones">Consulta de Autorizaciones Ambientales</a></li>
+                                <li><a href="#calculadora-autorizaciones">Calculadora de Autorizaciones Ambientales</a></li>
+                                <li><a href="#catalogo-servicios">Catálogo de Servicios</a></li>
+                                <li><a href="#visitas-areas-protegidas">Visitas a las Áreas Protegidas</a></li>
+                                <li><a href="#servicios-gubernamentales">Servicios Gubernamentales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#transparencia">TRANSPARENCIA</a></li>
+                        <li><a href="#reforestacion">REFORESTACIÓN</a></li>
+                        <li><a href="#regulaciones">REGULACIONES</a></li>
+                        <li class="dropdown">
+                            <a href="#informacion-ambiental">INFORMACIÓN AMBIENTAL <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#sigeo">Sistema geográfico (SIGEO)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#proyectos">PROYECTOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="quick-links-grid">
+                <a href="#" class="quick-link">
+                    <div class="quick-link-icon">9-1-1</div>
+                    <span>9-1-1</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <div class="quick-link-icon">3-1-1</div>
+                    <span>Sistema 3-1-1</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <div class="quick-link-icon"><i class="fas fa-cogs"></i></div>
+                    <span>Servicios del Gobierno Dominicano</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <div class="quick-link-icon"><i class="fas fa-chart-line"></i></div>
+                    <span>Observatorio Nacional</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <div class="quick-link-icon"><i class="fas fa-building"></i></div>
+                    <span>Administración Pública</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <div class="quick-link-icon">SAIP</div>
+                    <span>SAIP</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Ministerio de Medio Ambiente y Recursos Naturales</h1>
+                    <p>Protegiendo nuestro patrimonio natural para las futuras generaciones</p>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services-section">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Autorizaciones ambientales</h3>
+                        <p>¡Ahora puedes tramitar tus solicitudes en línea!</p>
+                        <a href="#" class="service-link">Accede a nuestro portal de servicios digitales aquí</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sello ABS</h3>
+                        <p>Conservando la biodiversidad y haciendo uso sostenible de los recursos genéticos</p>
+                        <a href="#" class="service-link">Conócelo aquí</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3>Taxonomía Verde</h3>
+                        <p>Conoce la Taxonomía Verde de República Dominicana</p>
+                        <a href="#" class="service-link">Más información aquí</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-campground"></i>
+                        </div>
+                        <h3>¿CAMPING EN VALLE NUEVO?</h3>
+                        <p>Conoce los pasos a seguir para acampar en el área protegida de mayor encanto y riqueza hídrica del país.</p>
+                        <a href="#" class="service-link">Descubre más</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>¡Visitar un área protegida ahora es más fácil!</h3>
+                        <p>Adquiere tu entrada aquí</p>
+                        <a href="#" class="service-link">Comprar entrada</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Services -->
+            <section class="quick-services">
+                <div class="quick-services-grid">
+                    <a href="#" class="quick-service">
+                        <div class="quick-service-icon green">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Línea verde</h4>
+                        <span>Ir al servicio</span>
+                    </a>
+                    
+                    <a href="#" class="quick-service">
+                        <div class="quick-service-icon blue">
+                            <i class="fas fa-file-check"></i>
+                        </div>
+                        <h4>Autorizaciones</h4>
+                        <span>Ir al servicio</span>
+                    </a>
+                    
+                    <a href="#" class="quick-service">
+                        <div class="quick-service-icon orange">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>CORRESPONDENCIA</h4>
+                        <span>Ir al servicio</span>
+                    </a>
+                    
+                    <a href="#" class="quick-service">
+                        <div class="quick-service-icon purple">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Servicios</h4>
+                        <span>Ir al catálogo</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section class="news-section">
+                <h2>Noticias</h2>
+                <div class="news-grid">
+                    <article class="news-item">
+                        <div class="news-image">
+                            <img src="https://ambiente.gob.do/wp-content/uploads/2024/12/noticia-plastico.jpg" alt="Noticia sobre plástico">
+                        </div>
+                        <div class="news-content">
+                            <h3>Paíno Henríquez llama a reducir el consumo de plástico y crear conciencia sobre el correcto manejo de los residuos sólidos</h3>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="news-image">
+                            <img src="https://ambiente.gob.do/wp-content/uploads/2024/12/noticia-sosua.jpg" alt="Noticia sobre Playa Sosúa">
+                        </div>
+                        <div class="news-content">
+                            <h3>Ministerio de Medio Ambiente reafirma compromiso con la protección de la zona costera en Playa Sosúa</h3>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="news-image">
+                            <img src="https://ambiente.gob.do/wp-content/uploads/2024/12/noticia-hidrologico.jpg" alt="Noticia sobre Plan Hidrológico">
+                        </div>
+                        <div class="news-content">
+                            <h3>Ministro de Medio Ambiente participa en presentación del Plan Hidrológico Nacional</h3>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="news-footer">
+                    <a href="#" class="news-link">Ir a sala de prensa</a>
+                </div>
+            </section>
+
+            <!-- Learn More Section -->
+            <section class="learn-more-section">
+                <h2>Conoce más</h2>
+                <div class="learn-more-grid">
+                    <div class="learn-more-item">
+                        <div class="learn-more-image">
+                            <img src="https://ambiente.gob.do/wp-content/uploads/2024/12/manati.jpg" alt="Protección de manatíes">
+                        </div>
+                        <div class="learn-more-content">
+                            <h3>Protección de nuestros manatíes</h3>
+                            <p>El manatí antillano está clasificado como una especie en peligro crítico de extinción.</p>
+                            <a href="#" class="learn-more-link">Descubre más</a>
+                        </div>
+                    </div>
+                    
+                    <div class="learn-more-item">
+                        <div class="learn-more-image">
+                            <img src="https://ambiente.gob.do/wp-content/uploads/2024/12/reserva-biosfera.jpg" alt="Reserva de Biosfera">
+                        </div>
+                        <div class="learn-more-content">
+                            <h3>Reserva de Biosfera Madre de las Aguas</h3>
+                            <p>Es una de las áreas de conservación más importantes del país y la región del Caribe.</p>
+                            <a href="#" class="learn-more-link">Descubre más</a>
+                        </div>
+                    </div>
+                    
+                    <div class="learn-more-item">
+                        <div class="learn-more-image">
+                            <img src="https://ambiente.gob.do/wp-content/uploads/2024/12/contaminacion-plasticos.jpg" alt="Contaminación por plásticos">
+                        </div>
+                        <div class="learn-more-content">
+                            <h3>Contaminación por plásticos</h3>
+                            <p>Seguimiento a las negociaciones del acuerdo global.</p>
+                            <a href="#" class="learn-more-link">Descubre más</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional Services -->
+            <section class="additional-services">
+                <div class="additional-services-grid">
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Educación Ambiental</h4>
+                        <p>Ponemos a tu disposición una serie de materiales educativos para que puedas aprender de ellos y multiplicar estos conocimientos.</p>
+                        <a href="#" class="additional-service-link">Clic aquí</a>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Reforestación</h4>
+                        <p>Durante la ejecución del Plan Nacional de Reforestación y Restauración de Ecosistemas Forestales ya se han plantado más de 12 millones de árboles en el periodo 2023-2024.</p>
+                        <a href="#" class="additional-service-link">Descubre más</a>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h4>Resoluciones</h4>
+                        <p>Conócelas</p>
+                        <a href="#" class="additional-service-link">Ver resoluciones</a>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Estudios de Impacto Ambiental (EIA)</h4>
+                        <p>Descubre más</p>
+                        <a href="#" class="additional-service-link">Ver estudios</a>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Foro</h4>
+                        <p>¡Participa!</p>
+                        <a href="#" class="additional-service-link">Ir al foro</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Affiliated Institutions -->
+            <section class="affiliated-institutions">
+                <h2>Instituciones Adscritas</h2>
+                <div class="institutions-grid">
+                    <div class="institution">
+                        <img src="https://ambiente.gob.do/wp-content/uploads/2023/01/logo-zoodom.png" alt="ZooDom">
+                    </div>
+                    <div class="institution">
+                        <img src="https://ambiente.gob.do/wp-content/uploads/2023/01/logo-museo-historia-natural.png" alt="Museo Historia Natural">
+                    </div>
+                    <div class="institution">
+                        <img src="https://ambiente.gob.do/wp-content/uploads/2023/01/logo-acuario-nacional.png" alt="Acuario Nacional">
+                    </div>
+                    <div class="institution">
+                        <img src="https://ambiente.gob.do/wp-content/uploads/2023/01/logo-fondomarena.png" alt="FondoMARENA">
+                    </div>
+                    <div class="institution">
+                        <img src="https://ambiente.gob.do/wp-content/uploads/2023/01/logo-indrhi.png" alt="INDRHI">
+                    </div>
+                    <div class="institution">
+                        <img src="https://ambiente.gob.do/wp-content/uploads/2023/01/logo-jardin-botanico.png" alt="Jardín Botánico">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="JB" >
+            <script src="https://cdn.jsdelivr.net/gh/debmedia/numiajb-widget@1.0.6/dist/build/static/js/bundle.min.js" async=""></script>
+              <journey-builder-chat
+                  window_title="Asistente de Ministerio de Medio Ambiente y Recursos Naturales"
+                  flow_id="7e095e42-d129-4586-b0b5-44f1fcdfd139"
+                  host_url="https://api.journeybuilder.qa.numia.co"
+                  api_key="sk-cqXB5gLOwKb05vR6_m-b7B2bVpEoemtN3eCViSSVDfM"
+                  chat_position='top-left'>
+              </journey-builder-chat>
+          
+              <!--journey-builder-chat
+          
+          
+                    window_title="Asistente de Numiacity"
+              flow_id="73a88122-8b8d-471c-b9f9-72f6820b50a5"
+              host_url="https://journey-builder.desa.numia.co"
+              api_key="sk-Z_ijQ5i048rNkztxnX6dFlOq7tIXwCWRvU6Vm-MnId4"
+                  chat_position='top-left'
+          height=400>
+          
+            
+                      </journey-builder-chat-->
+          
+          
+          </div>
+          
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://ambiente.gob.do/wp-content/uploads/2023/01/logo-ministerio.png" alt="Logo Ministerio">
+                    </div>
+                    <h4>CONÓCENOS</h4>
+                    <p>Ministerio de Medio Ambiente y Recursos Naturales</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>CONTÁCTANOS</h4>
+                    <p>Tel: 809-567-4300</p>
+                    <p>ambiente@gob.do</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>BÚSCANOS</h4>
+                    <p>Av. Cayetano Germosén esq. Av. Gregorio Luperón<br>Ensanche El Pedregal</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>INFÓRMATE</h4>
+                    <ul>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-left">
+                        <p>© 2025 Todos los derechos reservados. Desarrollado por el MMARN.</p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="language-footer">
+                            <span>es_DO</span>
+                            <span>en_US</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

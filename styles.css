@@ -25,12 +25,14 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .header-top {
-    background: #2c5530;
-    color: white;
+    background: white;
+    color: #2c5530;
     padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .header-top-content {
@@ -53,9 +55,16 @@ body {
 .search-box {
     display: flex;
     align-items: center;
-    background: white;
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
     border-radius: 25px;
     padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.search-box:hover {
+    background: #e9ecef;
+    border-color: #2c5530;
 }
 
 .search-box input {
@@ -64,6 +73,11 @@ body {
     padding: 8px;
     width: 200px;
     background: transparent;
+    color: #333;
+}
+
+.search-box input::placeholder {
+    color: #666;
 }
 
 .search-box button {
@@ -71,6 +85,11 @@ body {
     border: none;
     color: #2c5530;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-box button:hover {
+    color: #1a3d1e;
 }
 
 .language-selector {
@@ -80,14 +99,25 @@ body {
 
 .language-selector span {
     padding: 5px 10px;
-    background: rgba(255,255,255,0.2);
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
     border-radius: 3px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.3s;
+    color: #2c5530;
+    font-weight: 500;
 }
 
 .language-selector span:hover {
-    background: rgba(255,255,255,0.3);
+    background: #2c5530;
+    color: white;
+    border-color: #2c5530;
+}
+
+.language-selector span.active {
+    background: #2c5530;
+    color: white;
+    border-color: #2c5530;
 }
 
 /* Navigation Styles */
@@ -807,6 +837,12 @@ body {
         flex-direction: column;
         text-align: center;
     }
+    
+    /* Chat widget responsive */
+    .JB {
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -835,6 +871,53 @@ body {
     .affiliated-institutions h2 {
         font-size: 1.5rem;
     }
+    
+    /* Chat widget mobile optimization */
+    .JB {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Chat Widget Styles */
+.JB {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+}
+
+/* Ensure chat widget doesn't interfere with footer */
+.JB journey-builder-chat {
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Logo consistency across the site */
+.logo img,
+.footer-logo img {
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Ensure logo quality */
+.logo img {
+    filter: brightness(1.0);
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(44, 85, 48, 0.2);
+}
+
+/* Footer logo styling */
+.footer-logo img {
+    filter: brightness(1.2);
+    opacity: 0.9;
 }
 
 /* Animation Classes */

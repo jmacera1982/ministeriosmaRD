@@ -239,7 +239,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #2c5530;
+    color: #00307a;
 }
 
 .quick-link span {
@@ -255,7 +255,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #2c5530 0%, #1a3d1e 100%);
+    background: #00307a;
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -301,14 +301,14 @@ body {
 
 .service-icon {
     font-size: 3rem;
-    color: #2c5530;
+    color: #00307a;
     margin-bottom: 20px;
 }
 
 .service-card h3 {
     font-size: 1.3rem;
     margin-bottom: 15px;
-    color: #2c5530;
+    color: #00307a;
 }
 
 .service-card p {
@@ -317,7 +317,7 @@ body {
 }
 
 .service-link {
-    color: #2c5530;
+    color: #00307a;
     text-decoration: none;
     font-weight: 600;
     border-bottom: 2px solid transparent;
